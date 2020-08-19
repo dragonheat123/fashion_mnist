@@ -1,7 +1,7 @@
 # CNN for Fashion-MNIST Classification
 
 ### Data Augmentation
-During training time with uniform distribution between range. 
+During training time with uniform distribution between range, using Keras ImageDataGenerator()
 
 rotation +- 5 deg
 translation +- 5% of 28x28 pixels
