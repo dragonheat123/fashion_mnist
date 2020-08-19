@@ -2,6 +2,7 @@
 
 ### Data Augmentation
 During training time with uniform distribution between range. 
+
 rotation +- 5 deg
 translation +- 5% of 28x28 pixels
 shear +- 0.05 deg
