@@ -72,7 +72,7 @@ Test accuracy: 0.9217000007629395 (trained for 83 epochs, early stopping patienc
 
 Test accuracy: 0.9287999868392944 (trained for 208 epochs, early stopping patience for 25 epochs)
 
-### CNN with just Max Pooling
+### CNN with just Max Pooling + BN at the end
 ```
 Model: "functional_3"
 _________________________________________________________________
