@@ -73,7 +73,7 @@ Test accuracy: 0.9217000007629395 (trained for 83 epochs, early stopping patienc
 Test accuracy: 0.9287999868392944 (trained for 208 epochs, early stopping patience for 25 epochs)
 
 ### CNN with just Max Pooling
-
+```
 Model: "functional_3"
 _________________________________________________________________
 Layer (type)                 Output Shape              Param #   
@@ -104,7 +104,7 @@ Total params: 601,294
 Trainable params: 601,036
 Non-trainable params: 258
 _________________________________________________________________
-
+```
 ### Accuracy
 Test accuracy: 0.9312000274658203 (trained for 158 epochs, early stopping patience for 25 epochs)
 
