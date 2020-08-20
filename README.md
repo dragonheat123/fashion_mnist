@@ -14,7 +14,7 @@ train_transformations = ImageDataGenerator(
         horizontal_flip=True,
         fill_mode='nearest')
 ```
-### CNN Model
+### CNN Model with Max-Ave Pooling
 ```
 Layer (type)                    Output Shape         Param #     Connected to                     
 ==================================================================================================
@@ -71,3 +71,42 @@ Non-trainable params: 2
 Test accuracy: 0.9217000007629395 (trained for 83 epochs, early stopping patience for 20 epochs)
 
 Test accuracy: 0.9287999868392944 (trained for 208 epochs, early stopping patience for 25 epochs)
+
+### CNN with just Max Pooling
+
+Model: "functional_3"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+input_2 (InputLayer)         [(None, 28, 28, 1)]       0         
+_________________________________________________________________
+batch_normalization_1 (Batch (None, 28, 28, 1)         4         
+_________________________________________________________________
+conv2d_2 (Conv2D)            (None, 26, 26, 128)       1280      
+_________________________________________________________________
+dropout_2 (Dropout)          (None, 26, 26, 128)       0         
+_________________________________________________________________
+conv2d_3 (Conv2D)            (None, 24, 24, 64)        73792     
+_________________________________________________________________
+max_pooling2d_1 (MaxPooling2 (None, 8, 8, 64)          0         
+_________________________________________________________________
+flatten_1 (Flatten)          (None, 4096)              0         
+_________________________________________________________________
+dropout_3 (Dropout)          (None, 4096)              0         
+_________________________________________________________________
+dense_2 (Dense)              (None, 128)               524416    
+_________________________________________________________________
+batch_normalization_2 (Batch (None, 128)               512       
+_________________________________________________________________
+dense_3 (Dense)              (None, 10)                1290      
+=================================================================
+Total params: 601,294
+Trainable params: 601,036
+Non-trainable params: 258
+_________________________________________________________________
+
+### Accuracy
+Test accuracy: 0.9312000274658203 (trained for 158 epochs, early stopping patience for 25 epochs)
+
+Test accuracy: 0.9348000288009644 (trained for 205 epochs, early stopping patience for 30 epochs)
+
