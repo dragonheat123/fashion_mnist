@@ -72,4 +72,5 @@ Trainable params: 1,125,068
 Non-trainable params: 2
 ```
 ### Accuracy
-Test accuracy: 0.9217000007629395
+Test accuracy: 0.9217000007629395 (trained for 83 epochs, early stopping in 20 epochs)
+Test accuracy: 0.9287999868392944 (trained for 208 epochs, early stopping in 25 epochs)
