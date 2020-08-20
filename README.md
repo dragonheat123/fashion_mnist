@@ -112,5 +112,4 @@ Test accuracy: 0.9312000274658203 (trained for 158 epochs, early stopping patien
 
 Test accuracy: 0.9348000288009644 (trained for 205 epochs, early stopping patience for 30 epochs)
 
-# Best result from just max pooling. Seems like the dataset has a preference for sharper features rather than more soft features.
-
+# Best result from just max pooling + batch normalization at the end
