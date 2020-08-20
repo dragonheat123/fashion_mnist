@@ -3,11 +3,7 @@
 ### Data Augmentation
 During training time with uniform distribution between ranges, using Keras ImageDataGenerator()
 
-rotation +- 5 deg
-translation +- 5% of 28x28 pixels
-shear +- 0.05 deg
-zoom +- 5% zoom
-flip --> horizontal
+rotation +- 5 deg | translation +- 5% of 28x28 pixels | shear +- 0.05 deg | zoom +- 5% zoom | flip --> horizontal
 ```
 train_transformations = ImageDataGenerator(
         rotation_range=5,
